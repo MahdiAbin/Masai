@@ -1,0 +1,499 @@
+﻿@* @model Core.DTOs.Home_.HomeIndexViewModel *@
+@* <main class="main default space-top-10"> *@
+@* *@
+@*     <div class="container-fluid"> *@
+@*         <div class="slider_main owl-carousel owl-theme"> *@
+@* *@
+@*             <div class="item"> *@
+@*                 <a asp-controller="Category" asp-route-Catgory="ساعت  هوشمند" asp-action="Index"> *@
+@*                     <svg xmlns="http://www.w3.org/2000/svg"  class="svg_Masai" width="231" height="75" viewBox="0 0 231 75" fill="none" style="float: right;margin-bottom: -100px;position: relative;z-index: 9;margin-top: 0px;margin-right: 30px;"> *@
+@*                         <path clip-rule="evenodd" d="M0 0C31.5006 0.949537 50.52 17.872 56.1955 26.4544L55.986 25.8011L82.4924 58.631C99.3032 79.4521 131.038 79.4521 147.849 58.6309L174.356 25.8011L174.146 26.4544C179.822 17.872 198.844 0.949537 230.349 0H0Z" fill="#FCFCFC" fill-rule="" style="fill: #fff;"></path> *@
+@*                     </svg> *@
+@*                     <img src="assets/img/banner_img/01/16781944460617.jpg" class="img-fluid imgslider" alt=""> *@
+@*                 </a> *@
+@*             </div> *@
+@*             <div class="item"> *@
+@*                 <svg xmlns="http://www.w3.org/2000/svg" class="svg_Masai" width="231" height="75" viewBox="0 0 231 75" fill="none" style="float: right;margin-bottom: -100px;position: relative;z-index: 9;margin-top: 0px;margin-right: 30px;"> *@
+@*                     <path clip-rule="evenodd" d="M0 0C31.5006 0.949537 50.52 17.872 56.1955 26.4544L55.986 25.8011L82.4924 58.631C99.3032 79.4521 131.038 79.4521 147.849 58.6309L174.356 25.8011L174.146 26.4544C179.822 17.872 198.844 0.949537 230.349 0H0Z" fill="#FCFCFC" fill-rule="" style="fill: #fff;"></path> *@
+@*                 </svg> *@
+@*                 <a asp-controller="Category" asp-action="Index"> *@
+@*                     <img src="assets/img/banner_img/01/16785213091818.jpg" class="img-fluid imgslider" alt=""> *@
+@*                 </a> *@
+@*             </div> *@
+@*             <div class="item"> *@
+@*                 <svg xmlns="http://www.w3.org/2000/svg"  class="svg_Masai" width="231" height="75" viewBox="0 0 231 75" fill="none" style="float: right;margin-bottom: -100px;position: relative;z-index: 9;margin-top: 0px;margin-right: 30px;"> *@
+@*                     <path clip-rule="evenodd" d="M0 0C31.5006 0.949537 50.52 17.872 56.1955 26.4544L55.986 25.8011L82.4924 58.631C99.3032 79.4521 131.038 79.4521 147.849 58.6309L174.356 25.8011L174.146 26.4544C179.822 17.872 198.844 0.949537 230.349 0H0Z" fill="#FCFCFC" fill-rule="" style="fill: #fff;"></path> *@
+@*                 </svg> *@
+@*                 <a asp-controller="Category" asp-action="Index"> *@
+@*                     <img src="assets/img/banner_img/01/16789575390919.jpg" class="img-fluid imgslider" alt=""> *@
+@*                 </a> *@
+@*             </div> *@
+@*         </div> *@
+@*     </div> *@
+@*     <div class="container space-top-50 "> *@
+@*         <div class="row space-bottom-30"> *@
+@*             <div class="col-sm-6"> *@
+@*                 <div class="row"> *@
+@*                     <div class=" col-3  contact-miniicon  text-center"> *@
+@*                         <div class="space-5"> *@
+@*                             <img src="assets/img/Masai/minilogo/1.png" class="minilogo_w"> *@
+@*                             <b class="title-3 light-black">مَسای مارکت</b> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                     <div class="col-3  contact-miniicon  text-center"> *@
+@*                         <div class="space-5"> *@
+@*                             <img src="assets/img/Masai/minilogo/2.png" class="minilogo_w"> *@
+@*                             <b class="title-3 light-black">حراج مَسای</b> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                     <div class="col-3  contact-miniicon  text-center"> *@
+@*                         <div class="space-5"> *@
+@*                             <img src="assets/img/Masai/minilogo/3.png" class="minilogo_w"> *@
+@*                             <b class="title-3 light-black">خرید اقساطی</b> *@
+@*                         </div> *@
+@*                     </div> *@
+@* *@
+@*                     <div class=" col-3  contact-miniicon  text-center"> *@
+@*                         <div class="space-5"> *@
+@*                             <img src="assets/img/Masai/minilogo/4.png" class="minilogo_w"> *@
+@*                             <b class="title-3 light-black">مَسای سرویس</b> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </div> *@
+@*             </div> *@
+@*             <div class="col-sm-6"> *@
+@*                 <div class="row"> *@
+@* *@
+@*                     <div class="col-3   contact-miniicon  text-center"> *@
+@*                         <div class="space-5"> *@
+@*                             <img src="assets/img/Masai/minilogo/5.png" class="minilogo_w"> *@
+@*                             <b class="title-3 light-black">ماه رمضان</b> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                     <div class="col-3  contact-miniicon  text-center"> *@
+@*                         <div class="space-5"> *@
+@*                             <img src="assets/img/Masai/minilogo/6.png" class="minilogo_w"> *@
+@*                             <b class="title-3 light-black">مَسای پلاس</b> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                     <div class="col-3  contact-miniicon  text-center"> *@
+@*                         <div class="space-5"> *@
+@*                             <img src="assets/img/Masai/minilogo/7.png" class="minilogo_w"> *@
+@*                             <b class="title-3 light-black">هدیه خرید</b> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                     <div class="col-3  contact-miniicon  text-center"> *@
+@*                         <div class="space-5"> *@
+@*                             <img src="assets/img/Masai/minilogo/8.png" class="minilogo_w"> *@
+@*                             <b class="title-3 light-black">بیشتر</b> *@
+@*                         </div> *@
+@*                     </div> *@
+@* *@
+@*                 </div> *@
+@*             </div> *@
+@* *@
+@*         </div> *@
+@*         <div class="row"> *@
+@* *@
+@* *@
+@* *@
+@*             <div class="col-9 hidden-xs hidden-md"> *@
+@*                 <section id="offercarousel" class="carousel slide carousel-fade card border_all" data-ride="carousel"> *@
+@*                     <div class="row m-0"> *@
+@* *@
+@*                         <div class="carousel-inner p-0 col-12 col-lg-12"> *@
+@*                             <ol class="carousel-indicators pr-0 d-flex flex-column "> *@
+@*                                 <li class="active" data-target="#offercarousel" data-slide-to="0"> *@
+@* *@
+@*                                 </li> *@
+@*                                 <li data-target="#offercarousel" data-slide-to="1" class=""> *@
+@* *@
+@*                                 </li> *@
+@*                                 <li data-target="#offercarousel" data-slide-to="2" class=""> *@
+@* *@
+@*                                 </li> *@
+@*                                 <li data-target="#offercarousel" data-slide-to="3" class=""> *@
+@* *@
+@*                                 </li> *@
+@*                                 <li data-target="#offercarousel" data-slide-to="4" class=""> *@
+@* *@
+@*                                 </li> *@
+@*                                 <li data-target="#offercarousel" data-slide-to="5" class=""> *@
+@* *@
+@*                                 </li> *@
+@*                                 <li data-target="#offercarousel" data-slide-to="6"> *@
+@* *@
+@*                                 </li> *@
+@*                                 <li data-target="#offercarousel" data-slide-to="7"> *@
+@* *@
+@*                                 </li> *@
+@*                                 <li data-target="#offercarousel" data-slide-to="8"> *@
+@* *@
+@*                                 </li> *@
+@* *@
+@*                             </ol> *@
+@*                 @{ *@
+@*                     foreach (var product in Model.Products) *@
+@*                     { *@
+@*                         var discount = product.Price - product.Discount; *@
+@*                         double originalPrice = product.Price; // قیمت اصلی *@
+@*                         double discountAmount = product.Discount; // مقدار تخفیف *@
+@*                         double discountPercent = (int)System.Math.Round((discountAmount / originalPrice) * 100); *@
+@*                                     <div class="carousel-item active"> *@
+@*                                 <div class="row m-0"> *@
+@*                                     <div class="right-col col-5 d-flex imgboxofer"> *@
+@*                                         <a class="w-100 text-center" asp-action="SingleProduct" asp-controller="Product" asp-route-product="@product.ID"> *@
+@*                                             <img src="@Url.Action("ShowImage","Product",new {productId =product.ID})" class="img-fluid" alt="عکس ندارد"> *@
+@*                                             <span class="discount-percent">@discountPercent % تخفیف</span> *@
+@* *@
+@*                                         </a> *@
+@*                                     </div> *@
+@*                                     <div class="left-col col-7"> *@
+@* *@
+@*                                         <h2 class="product-title "> *@
+@*                                             <a asp-action="SingleProduct" asp-controller="Product" asp-route-product="@product.ID">  @product.Name</a> *@
+@* *@
+@*                                         </h2> *@
+@*                                         <hr class="hr-text" data-content="@product.Description"> *@
+@* *@
+@*                                         <div class="row"> *@
+@*                                             <div class="col-6"> *@
+@*                                                 <ul class="list-group space-15"> *@
+@*                                                     <li class="list-group-item">رنگ: @product.Color</li> *@
+@*                                                 </ul> *@
+@*                                             </div> *@
+@*                                             <div class="col-6"> *@
+@*                                                 <ul class="list-group space-15"> *@
+@*                                                     <li class="list-group-item">برند : @product.Brand</li> *@
+@*                                                 </ul> *@
+@*                                             </div> *@
+@*                                         </div> *@
+@* *@
+@*                                         <div class="price space-15"> *@
+@*                                             <del><span>@product.Price.ToString("N0")<span>تومان</span></span></del> *@
+@*                                             <ins><span>@discount.ToString("N0")<span>تومان</span></span></ins> *@
+@*                                         </div> *@
+@* *@
+@*                                         <div class="row space-15"> *@
+@*                                             <div class="col-5 timer-title"> *@
+@* *@
+@* *@
+@*                                                 <h5>یه ثانیه هم غنیمته</h5> *@
+@*                                                 <p>زمان باقی مانده </p> *@
+@* *@
+@*                                             </div> *@
+@*                                             <div class="col-7"> *@
+@*                                                 <div class="countdown-timer" countdown data-date="06 12 2023 20:20:22"> *@
+@*                                                     <ul class="text_countdown"> *@
+@*                                                         <li data-days class="number_countdown">0</li> *@
+@*                                                         <li>روز</li> *@
+@*                                                     </ul> *@
+@*                                                     <ul class="text_countdown"> *@
+@*                                                         <li data-hours class="number_countdown">0</li> *@
+@*                                                         <li>ساعت</li> *@
+@*                                                     </ul> *@
+@*                                                     <ul class="text_countdown"> *@
+@*                                                         <li data-minutes class="number_countdown">0</li> *@
+@*                                                         <li>دقیقه</li> *@
+@*                                                     </ul> *@
+@*                                                     <ul class="text_countdown"> *@
+@*                                                         <li data-seconds class="number_countdown">0</li> *@
+@*                                                         <li>ثانیه</li> *@
+@*                                                     </ul> *@
+@*                                                 </div> *@
+@*                                             </div> *@
+@*                                         </div> *@
+@*                                     </div> *@
+@*                                 </div> *@
+@*                             </div> *@
+@*                     } *@
+@*                 } *@
+@*                        *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </section> *@
+@*             </div> *@
+@*             <div class="col-3 hidden-xs hidden-md"> *@
+@*                 <div class="widget-bid-s widget card border_all "> *@
+@* *@
+@* *@
+@*                     <div id="bid-s" class="owl-carousel owl-theme"> *@
+@*                       @{ *@
+@*                           foreach (var product in Model.Products) *@
+@*                           { *@
+@*                               var discount = product.Price - product.Discount; *@
+@*                               double originalPrice = product.Price; // قیمت اصلی *@
+@*                               double discountAmount = product.Discount; // مقدار تخفیف *@
+@*                               double discountPercent = (int)System.Math.Round((discountAmount / originalPrice) * 100); *@
+@*                               <div class="item"> *@
+@*                                   <a asp-controller="Product" asp-action="SingleProduct" asp-route-product="@(product.ID)"> *@
+@*                                       <img src="@Url.Action("ShowImage","Product",new {productId =product.ID})" alt="عکس ندارد" class="w-100"> *@
+@*                                   </a> *@
+@*                                   <h3 class="product-title"> *@
+@*                                       <a asp-controller="Product" asp-action="SingleProduct" asp-route-product="@(product.ID)"> @product.Name</a> *@
+@*                                   </h3> *@
+@*                                   <div class="price"> *@
+@*                                       <span class="amount">@discount.ToString("N0")<span>تومان</span></span> *@
+@*                                   </div> *@
+@*                               </div> *@
+@*                           } *@
+@*                       } *@
+@*                      *@
+@*                     </div> *@
+@*                     <div id="progressBar"> *@
+@*                         <div class="slide-progress"></div> *@
+@*                     </div> *@
+@*                 </div> *@
+@* *@
+@*             </div> *@
+@*             <div class="col-12"> *@
+@* *@
+@*                 <div class="row banner-ads"> *@
+@*                     <div class="col-12"> *@
+@*                         <div class="row"> *@
+@*                             <div class="col-6 col-lg-3"> *@
+@*                                 <div class="widget-banner card border_all"> *@
+@*                                     <a asp-controller="Category" asp-action="Index" asp-route-Catgory="مودم" target="_blank"> *@
+@*                                         <img class="img-fluid" src="assets/img/banner_img/img-3.jpg" alt=""> *@
+@*                                     </a> *@
+@*                                 </div> *@
+@*                             </div> *@
+@*                             <div class="col-6 col-lg-3"> *@
+@*                                 <div class="widget-banner card"> *@
+@*                                     <a asp-controller="Category" asp-action="Index" asp-route-Catgory="کامپیوتر" target="_blank"> *@
+@*                                         <img class="img-fluid" src="assets/img/banner_img/img-4.jpg" alt=""> *@
+@*                                     </a> *@
+@*                                 </div> *@
+@*                             </div> *@
+@*                             <div class="col-6 col-lg-3"> *@
+@*                                 <div class="widget-banner card border_all"> *@
+@*                                     <a asp-controller="Category" asp-action="Index" asp-route-Catgory="هارد و فلش" target="_blank"> *@
+@*                                         <img class="img-fluid" src="assets/img/banner_img/img-5.jpg" alt=""> *@
+@*                                     </a> *@
+@*                                 </div> *@
+@*                             </div> *@
+@*                             <div class="col-6 col-lg-3"> *@
+@*                                 <div class="widget-banner card"> *@
+@*                                     <a asp-controller="Category" asp-action="Index" asp-route-Catgory="تبلت" target="_blank"> *@
+@*                                         <img class="img-fluid" src="assets/img/banner_img/img-6.jpg" alt=""> *@
+@*                                     </a> *@
+@*                                 </div> *@
+@*                             </div> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </div> *@
+@*             </div> *@
+@* *@
+@*             <div class="col-12"> *@
+@*                 <div class="row"> *@
+@*                     <div class="col-12"> *@
+@*                         <div class="widget widget-product card border_all bglight pad_time_prod" id="shegeft_1"> *@
+@*                             <header class="card-header"> *@
+@*                                 <h3 class="card-title"> *@
+@*                                             <span> *@
+@*                                                 <img src="assets/img/shegeft_1.png" /> *@
+@*                                             </span> *@
+@*                                 </h3> *@
+@*                                 <div class="countdown-timer" countdown data-date="06 12 2023 20:20:22"> *@
+@*                                     <ul class="text_countdown"> *@
+@*                                         <li data-days class="number_countdown">0</li> *@
+@*                                         <li>روز</li> *@
+@*                                     </ul> *@
+@*                                     <ul class="text_countdown"> *@
+@*                                         <li data-hours class="number_countdown">0</li> *@
+@*                                         <li>ساعت</li> *@
+@*                                     </ul> *@
+@*                                     <ul class="text_countdown"> *@
+@*                                         <li data-minutes class="number_countdown">0</li> *@
+@*                                         <li>دقیقه</li> *@
+@*                                     </ul> *@
+@*                                     <ul class="text_countdown"> *@
+@*                                         <li data-seconds class="number_countdown">0</li> *@
+@*                                         <li>ثانیه</li> *@
+@*                                     </ul> *@
+@*                                 </div> *@
+@*                             </header> *@
+@*                             <div class="product-carousel owl-carousel owl-theme"> *@
+@*                                @{ *@
+@*                                    foreach (var pro in Model.Products) *@
+@*                                    { *@
+@*                                        var discount = pro.Price -pro.Discount; *@
+@*                                        double originalPrice = pro.Price; // قیمت اصلی *@
+@*                                        double discountAmount = pro.Discount; // مقدار تخفیف *@
+@*                                        double discountPercent = (int)System.Math.Round((discountAmount / originalPrice) * 100); *@
+@*                                        <div class="item"> *@
+@*                                            <a asp-controller="Product" asp-action="SingleProduct" asp-route-product="@(pro.ID)"> *@
+@*                                                <img src="@Url.Action("ShowImage","Product",new {productId =pro.ID})" alt="عکس ندارد" class="img-fluid"> *@
+@*                                            </a> *@
+@*                                            <h2 class="product_title"> *@
+@*                                                <a asp-controller="Product" asp-action="SingleProduct" asp-route-product="@pro.ID">@pro.Name  </a> *@
+@*                                            </h2> *@
+@*                                            <div class="price"> *@
+@*                                                <del><span>@pro.Price.ToString("N0")<span>تومان</span></span></del> *@
+@*                                                <span class="discount_badge">@discountPercent%</span> *@
+@*                                                <ins><span>@discount.ToString("N0")<span>تومان</span></span></ins> *@
+@*                                            </div> *@
+@*                                        </div> *@
+@*                                    } *@
+@*                                } *@
+@*                             *@
+@*                             </div> *@
+@*                             <a asp-controller="Category" asp-action="Index" class="view_more">مشاهده بیشتر</a> *@
+@* *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </div> *@
+@*                 <div class="row banner-ads"> *@
+@*                     <div class="col-12"> *@
+@*                         <div class="row"> *@
+@*                             <div class="col-12 col-lg-6"> *@
+@*                                 <div class="widget-banner card border_all"> *@
+@*                                     <a asp-action="Index" asp-controller="Category" target="_blank"> *@
+@*                                         <img class="img-fluid" src="assets/img/banner_img/img-7.jpg" alt=""> *@
+@*                                     </a> *@
+@*                                 </div> *@
+@*                             </div> *@
+@*                             <div class="col-12 col-lg-6"> *@
+@*                                 <div class="widget-banner card"> *@
+@*                                     <a asp-action="Index" asp-controller="Category" target="_top"> *@
+@*                                         <img class="img-fluid" src="assets/img/banner_img/img-8.jpg" alt=""> *@
+@*                                     </a> *@
+@*                                 </div> *@
+@*                             </div> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </div> *@
+@*                 <div class="row"> *@
+@*                     <div class="col-12"> *@
+@*                         <div class="widget widget-product card border_all bglight"> *@
+@*                             <header class="card-header"> *@
+@*                                 <h3 class="card-title"> *@
+@*                                     <span><img src="assets/img/seller_1.png" /></span> *@
+@*                                 </h3> *@
+@*                             </header> *@
+@*                             <div class="product-carousel owl-carousel owl-theme"> *@
+@*                     @{ *@
+@*                         foreach (var pro in Model.Products) *@
+@*                         { *@
+@*                             double originalPrice = pro.Price; // قیمت اصلی *@
+@*                             double discountAmount = pro.Discount; // مقدار تخفیف *@
+@*                             var discount = pro.Price - pro.Discount; *@
+@*                             double discountPercent = (int)System.Math.Round((discountAmount / originalPrice) * 100); *@
+@*                             <div class="item"> *@
+@*                                 <a asp-controller="Product" asp-action="SingleProduct" asp-route-product="@(pro.ID)"> *@
+@*                                     <img src="@Url.Action("ShowImage","Product",new {productId =pro.ID})" alt="عکس ندارد" class="img-fluid"> *@
+@*                                 </a> *@
+@*                                 <h2 class="product_title"> *@
+@*                                     <a asp-controller="Product" asp-action="SingleProduct" asp-route-product="@(pro.ID)"> @pro.Name</a> *@
+@*                                 </h2> *@
+@*                                 <div class="price"> *@
+@*                                     <del><span>@pro.Price.ToString("N0")<span>تومان</span></span></del> *@
+@*                                     <span class="discount_badge">5%</span> *@
+@* *@
+@*                                     <ins><span>@discount.ToString("N0")<span>تومان</span></span></ins> *@
+@*                                 </div> *@
+@*                             </div> *@
+@*                         } *@
+@*                     } *@
+@*                   *@
+@*                             </div> *@
+@*                             <a asp-action="Index" asp-controller="Category" class="view_more">مشاهده بیشتر  </a> *@
+@* *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </div> *@
+@* *@
+@* *@
+@* *@
+@*             </div> *@
+@* *@
+@*         </div> *@
+@*         <div class="row banner-ads"> *@
+@*             <div class="col-12"> *@
+@*                 <div class="row"> *@
+@*                     <div class="col-12"> *@
+@*                         <div class="widget widget-banner card border_all"> *@
+@*                             <a asp-action="Index" asp-controller="Category" target="_blank"> *@
+@*                                 <img class="img-fluid" src="assets/img/banner_img/img-9.jpg" alt=""> *@
+@*                             </a> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </div> *@
+@*             </div> *@
+@*         </div> *@
+@*         <div class="row"> *@
+@* *@
+@*             <div class="col-12"> *@
+@*                 <div class="brand-slider card border_all bglight"> *@
+@*                     <header class="card-header"> *@
+@*                         <h3 class="card-title"><span>دسته بندی های مَسای</span></h3> *@
+@*                     </header> *@
+@*                     <div class="row"> *@
+@*                          *@
+@*                         <div class="col-12"> *@
+@*                             <div class="row"> *@
+@*                                 @{ *@
+@*                                     foreach (var cat in Model.Parent) *@
+@*                                     { *@
+@*                                         <div class="col-6 col-md-2 contact-bigicon"> *@
+@* *@
+@*                                             <a asp-controller="Category" asp-action="Index" asp-route-Catgory="@cat.Name" target="_blank"> *@
+@*                                                 <img class="img-responsive imgpad" src="assets/img/Masai/bigicon/img-7.png" alt="" /> *@
+@*                                                 <b class="title-3 light-black">@cat.Name</b> *@
+@*                                             </a> *@
+@* *@
+@*                                         </div> *@
+@*                                     } *@
+@*                                 } *@
+@*                             *@
+@*                             </div> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </div> *@
+@*             </div> *@
+@*         </div> *@
+@* *@
+@*         <div class="row"> *@
+@* *@
+@*             <div class="col-12"> *@
+@*                 <div class="brand-slider card border_all bglight"> *@
+@*                     <header class="card-header"> *@
+@*                         <h3 class="card-title"><span>محبوب‌ترین برندها</span></h3> *@
+@*                     </header> *@
+@*                     <div class="owl-carousel"> *@
+@*                         <div class="item borderitem"> *@
+@*                             <a asp-controller="Category" asp-action="Index" asp-route-Brand="تسکو"> <img src="assets/img/brands/brand-1.jpg" alt=""> </a> *@
+@*                         </div> *@
+@*                         <div class="item borderitem"> *@
+@*                             <a asp-controller="Category" asp-action="Index" asp-route-Brand="شیائومی"> <img src="assets/img/brands/brand-2.jpg" alt=""> </a> *@
+@*                         </div> *@
+@*                         <div class="item borderitem"> *@
+@*                             <a asp-controller="Category" asp-action="Index" asp-route-Brand="اپل"> <img src="assets/img/brands/brand-3.jpg" alt=""> </a> *@
+@*                         </div> *@
+@*                         <div class="item borderitem"> *@
+@*                             <a asp-controller="Category" asp-action="Index" asp-route-Brand="نوکیا"> <img src="assets/img/brands/brand-4.jpg" alt=""> </a> *@
+@*                         </div> *@
+@*                         <div class="item borderitem"> *@
+@*                             <a asp-controller="Category" asp-action="Index" asp-route-Brand="موتورولا"> <img src="assets/img/brands/brand-5.jpg" alt=""> </a> *@
+@*                         </div> *@
+@*                         <div class="item borderitem"> *@
+@*                             <a asp-controller="Category" asp-action="Index" asp-route-Brand="ال جی"> <img src="assets/img/brands/brand-6.jpg" alt=""> </a> *@
+@*                         </div> *@
+@*                         <div class="item borderitem"> *@
+@*                             <a asp-controller="Category" asp-action="Index" asp-route-Brand="هواوی"> <img src="assets/img/brands/brand-7.jpg" alt=""> </a> *@
+@*                         </div> *@
+@*                         <div class="item borderitem"> *@
+@*                             <a asp-controller="Category" asp-action="Index" asp-route-Brand="سامسونگ"> <img src="assets/img/brands/brand-8.jpg" alt=""> </a> *@
+@*                         </div> *@
+@*                         <div class="item borderitem"> *@
+@*                             <a asp-controller="Category" asp-action="Index" asp-route-Brand="دوو"> <img src="assets/img/brands/brand-9.jpg" alt=""> </a> *@
+@*                         </div> *@
+@*                         <div class="item borderitem"> *@
+@*                             <a asp-controller="Category" asp-action="Index" asp-route-Brand="اسنوا"> <img src="assets/img/brands/brand-10.jpg" alt=""> </a> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </div> *@
+@*             </div> *@
+@*         </div> *@
+@*     </div> *@
+@* </main> *@

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HEIMER-TECH\\Desktop\\Masai_Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9D5B49-5CE0-4021-B9FD-4EA90E214225}|Masai_Web\\Masai_Web.csproj|c:\\users\\heimer-tech\\desktop\\masai_web\\masai_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B9D5B49-5CE0-4021-B9FD-4EA90E214225}|Masai_Web\\Masai_Web.csproj|solutionrelative:masai_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HEIMER-TECH\\Desktop\\Masai_Web\\Masai_Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Masai_Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\HEIMER-TECH\\Desktop\\Masai_Web\\Masai_Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Masai_Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-30T12:44:08.862Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

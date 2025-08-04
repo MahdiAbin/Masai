@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Masai_Web.props" />
+</Project>
