@@ -1,4 +1,5 @@
 using System.Security.Claims;
+using Core.DTOs;
 using Core.DTOs.UserDTO;
 using Core.Security;
 using Data.Entities.User;
@@ -6,6 +7,7 @@ using Data.Repository;
 using MapsterMapper;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
@@ -45,10 +47,11 @@ public class UserController : Controller
                 var claimiddIdentity = new ClaimsIdentity(new[] { claim },
                     CookieAuthenticationDefaults.AuthenticationScheme);
                 var claimpro = new ClaimsPrincipal(claimiddIdentity);
-                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimpro,new AuthenticationProperties{
-                
-                    ExpiresUtc = dto.IsRememberMe? DateTime.Now.AddYears(7):DateTime.Now.AddHours(1)
-                        });
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimpro,
+                    new AuthenticationProperties
+                    {
+                        ExpiresUtc = dto.IsRememberMe ? DateTime.Now.AddDays(7) : DateTime.Now.AddHours(1)
+                    });
                 return RedirectToAction("Profile");
             }
 
@@ -64,14 +67,99 @@ public class UserController : Controller
     {
         return View();
     }
+
     [HttpPost]
     public async Task<IActionResult> SignUp(SignUpDTO dto)
     {
-        if (ModelState.IsValid&& dto.Is)
+        if (ModelState.IsValid && dto.Is)
         {
-            var map=_mapper.Map<User>(dto);
+            var exist = new
+            {
+                username = await _userService.CheckUserNameExists(dto.UserName),
+                email = await _userService.CheckEmailExists(dto.Email),
+                mobile = await _userService.CheckMobileExists(dto.MobileNumber)
+            };
+            if (exist.username)
+            {
+                ModelState.AddModelError("Exist", "نام کاربری تکراری است!!!");
+            }
+
+            if (exist.email)
+            {
+                ModelState.AddModelError("Exist", "ایمیل تکراری است!!!");
+            }
+
+            if (exist.mobile)
+            {
+                ModelState.AddModelError("Exist", "شماره تلفن تکراری است!!!");
+            }
+
+            if (exist.email || exist.mobile || exist.username)
+            {
+                return View(dto);
+            }
+
+            var map = _mapper.Map<User>(dto);
             await _userService.AddUser(map);
             return RedirectToAction("Login");
+        }
+
+        return View(dto);
+    }
+
+    [Authorize]
+    [Route("/Profile")]
+    public async Task<IActionResult> Profile()
+    {
+        var user = await _userService.GetUserByUserName(User.Identity.Name);
+        var map = _mapper.Map<ProfileDTO>(user);
+        return View(map);
+    }
+
+    [Authorize]
+    [HttpGet]
+    public async Task<IActionResult> EditProfile()
+    {
+        var user = await _userService.GetUserByUserName(User.Identity.Name);
+        var map = _mapper.Map<EditProfile>(user);
+        return View(map);
+    }
+
+    [Authorize]
+    [HttpPost]
+    public async Task<IActionResult> EditProfile(EditProfile dto)
+    {
+        if (ModelState.IsValid)
+        {
+            var map = _mapper.Map<User>(dto);
+            var user = await _userService.EditProfile(map, User.Identity.Name);
+            var map2 = _mapper.Map<EditProfile>(user);
+            return RedirectToAction("Logout");
+        }
+
+        return View(dto);
+    }
+
+    public async Task<IActionResult> Logout()
+    {
+        await HttpContext.SignOutAsync();
+        return RedirectToAction("Login");
+    }
+
+    [Authorize]
+    [HttpGet]
+    public async Task<IActionResult> UpdatePassword()
+    {
+        return View();
+    }
+    [Authorize]
+    [HttpPost]
+    public async Task<IActionResult> UpdatePassword(UpdatePassDTO dto)
+    {
+        if (ModelState.IsValid)
+        {
+            await _userService.EditPassword(User.Identity.Name, dto.Password);
+            return RedirectToAction("Logout");
         }
         return View(dto);
     }

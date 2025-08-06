@@ -456,3 +456,4 @@ C:\Users\HEIMER-TECH\Desktop\Masai_Web\Masai_Web\bin\Debug\net8.0\Microsoft.AspN
 C:\Users\HEIMER-TECH\Desktop\Masai_Web\Masai_Web\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\HEIMER-TECH\Desktop\Masai_Web\Masai_Web\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
 C:\Users\HEIMER-TECH\Desktop\Masai_Web\Masai_Web\obj\Debug\net8.0\Masai_Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HEIMER-TECH\Desktop\Masai_Web\Masai_Web\obj\Debug\net8.0\Masai_Web.sourcelink.json

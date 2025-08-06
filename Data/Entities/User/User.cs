@@ -15,8 +15,10 @@ namespace Data.Entities.User
         public string Email { get; set; }
         public string Password { get; set; }
         public string MobileNumber { get; set; }
-        
-        
+
+
+        public string FName { get; set; }
+        public string LName { get; set; }
         
         public string? Sheba { get; set; }
         public string? NumberCart { get; set; }
@@ -25,9 +27,7 @@ namespace Data.Entities.User
         public string? Job { get; set; }
         public string? NationalCode { get; set; }
         public string? CompanyName { get; set; }
-        public List<int>? ProductFavorite { get; set; }
-        public string? ImageName { get; set; }
-        public DateTime CreationDateTime { get; set; }
+        public DateTime RegisterDate { get; set; }
 
         #region Releations
         public Address address { get; set; }
@@ -36,7 +36,7 @@ namespace Data.Entities.User
 
         public User()
         {
-            CreationDateTime = DateTime.Now;
+            RegisterDate = DateTime.Now;
         }
     }
 }

@@ -12,3 +12,4 @@ C:\Users\HEIMER-TECH\Desktop\Masai_Web\Data\obj\Debug\net8.0\Data.pdb
 C:\Users\HEIMER-TECH\Desktop\Masai_Web\Data\obj\Debug\net8.0\ref\Data.dll
 C:\Users\HEIMER-TECH\Desktop\Masai_Web\Data\bin\Debug\net8.0\Data.runtimeconfig.json
 C:\Users\HEIMER-TECH\Desktop\Masai_Web\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
+C:\Users\HEIMER-TECH\Desktop\Masai_Web\Data\obj\Debug\net8.0\Data.sourcelink.json
