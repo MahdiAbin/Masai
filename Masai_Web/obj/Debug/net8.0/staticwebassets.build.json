@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fY+i7GSr1kywDfPxN+3QyGIJ1cudbAIs/MLWOO/ezAk=",
+  "Hash": "tGYFtRvUlhdg+u3wesqq1tDOwGgFk/EbrnNVaong7DE=",
   "Source": "Masai_Web",
   "BasePath": "_content/Masai_Web",
   "Mode": "Default",
@@ -3171,12 +3171,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\HEIMER-TECH\\Desktop\\Masai_Web\\Masai_Web\\wwwroot\\Images\\Products\\4117f3ad-e.jpg",
+      "Identity": "C:\\Users\\HEIMER-TECH\\Desktop\\Masai_Web\\Masai_Web\\wwwroot\\Images\\Products\\35f233b4-fjpg",
       "SourceId": "Masai_Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\HEIMER-TECH\\Desktop\\Masai_Web\\Masai_Web\\wwwroot\\",
       "BasePath": "_content/Masai_Web",
-      "RelativePath": "Images/Products/4117f3ad-e.jpg",
+      "RelativePath": "Images/Products/35f233b4-fjpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3187,7 +3187,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Products\\4117f3ad-e.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\35f233b4-fjpg"
     }
   ]
 }

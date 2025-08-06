@@ -25,7 +25,8 @@ namespace Core.Injection
 
         public static IServiceCollection AddServices(IServiceCollection services)
         {
-            services.AddScoped<IUserService, UserSerivce>();
+            services.AddScoped<IUserService, UserSerivce>()
+                .AddScoped<IProductService, ProductService>();
 
             return services;
         }

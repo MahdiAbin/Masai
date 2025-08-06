@@ -16,3 +16,8 @@ C:\Users\HEIMER-TECH\Desktop\Masai_Web\Core\obj\Debug\net8.0\Core.csproj.Up2Date
 C:\Users\HEIMER-TECH\Desktop\Masai_Web\Core\bin\Debug\net8.0\Core.runtimeconfig.json
 C:\Users\HEIMER-TECH\Desktop\Masai_Web\Core\obj\Debug\net8.0\Core.genruntimeconfig.cache
 C:\Users\HEIMER-TECH\Desktop\Masai_Web\Core\obj\Debug\net8.0\Core.sourcelink.json
+C:\Users\HEIMER-TECH\Desktop\Masai_Web\Core\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\HEIMER-TECH\Desktop\Masai_Web\Core\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
+C:\Users\HEIMER-TECH\Desktop\Masai_Web\Core\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\HEIMER-TECH\Desktop\Masai_Web\Core\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\HEIMER-TECH\Desktop\Masai_Web\Core\bin\Debug\net8.0\Microsoft.Extensions.Features.dll
